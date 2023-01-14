@@ -1,17 +1,26 @@
-$accent:#FF6838;
-$default-color:#31352B;
+$accent: #ff6838;
+$default-color: #31352b;
 $title-color: #363853;
 
 %rubik-400 {
-   font-family: 'Rubik-Regular', sans-serif;
+   font-family: "Rubik-Regular", sans-serif;
    font-weight: 400;
 }
 %rubik-500 {
-   font-family: 'Rubik-Medium', sans-serif;
+   font-family: "Rubik-Medium", sans-serif;
    font-weight: 500;
 }
 %rubik-italic {
-   font-family: 'Rubik-italic', sans-serif;
+   font-family: "Rubik-italic", sans-serif;
    font-weight: 400;
    font-style: italic;
+}
+
+%content {
+   content: " ";
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 20px;
+   height: 20px;
 }

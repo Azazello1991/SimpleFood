@@ -3,6 +3,8 @@
 @import "reset";
 @import "global";
 
+//------------header---------//
+
 .header {
    &__inner {
       display: flex;
@@ -19,13 +21,14 @@
 
 .logo {
    outline: transparent;
-   &:hover {
-      opacity: 0.8;
-   }
 
    &:focus {
       box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
       border-radius: 5px;
+   }
+
+   &:hover {
+      opacity: 0.8;
    }
 
    &:active {
@@ -55,15 +58,15 @@
       font-size: 18px;
       line-height: 1.16;
       outline: transparent;
-      transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
-
-      &:hover {
-         color: $accent;
-      }
+      transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
 
       &:focus {
          box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
          border-radius: 5px;
+      }
+
+      &:hover {
+         color: $accent;
       }
 
       &:active {
@@ -81,131 +84,244 @@
    justify-content: center;
 
    &__btn {
+      position: relative;
       display: flex;
       justify-content: center;
       align-items: center;
-      position: relative;
-      border: 0 transparent;
       height: 44px;
       width: 44px;
       margin-right: 36px;
-      cursor: pointer;
+      border: 0 transparent;
       outline: transparent;
       background-color: transparent;
       border-radius: 5px;
       transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      cursor: pointer;
+
+      &:focus {
+         background-color: rgba(255, 122, 80, 0.1);
+         box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+      }
 
       &:hover {
          background-color: $accent;
       }
 
-      &:focus {
-         background: rgba(255, 122, 80, 0.1);
-         box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+      &:hover .user-nav__svg {
+         background-color: #ffffff;
+      }
+
+      &:hover .user-nav__num {
+         color: $accent;
+         background-color: #ffffff;
       }
 
       &:active {
-         background: #fff2ed;
+         background-color: #fff2ed;
+         box-shadow: 0 0 0 0 rgba(255, 104, 56, 0.7);
+      }
+
+      &:active .user-nav__svg {
+         background-color: $title-color;
       }
    }
-
-   &__btn--search {
-      &:hover .icon-search {
-         background-color: #ffffff;
-         mask-image: url("../images/sprite.svg#icon-search");
-         mask-size: contain;
-         mask-position: center;
-         mask-repeat: no-repeat;
-      }
-   }
-
-   &__btn--cart {
-      &:hover .user-nav__num {
-         background-color: #ffffff;
-         color: $accent;
-      }
-
-      &:hover .icon-cart {
-         background-color: #ffffff;
-         mask-image: url("../images/sprite.svg#icon-cart");
-         mask-size: contain;
-         mask-position: center;
-         mask-repeat: no-repeat;
-      }
+   &__svg {
+      background-color: $title-color;
+      mask-repeat: no-repeat;
+      mask-size: contain;
+      mask-position: center;
+      width: 20px;
+      height: 20px;
+      transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
    }
 
    &__num {
+      position: absolute;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 8px;
+      right: 5px;
       height: 14px;
       width: 14px;
-      padding-top: 1px;
       font-size: 10px;
       line-height: 1.2;
       text-align: center;
       background-color: $accent;
       color: #ffffff;
       border-radius: 50%;
-      position: absolute;
-      top: 8px;
-      right: 5px;
       transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
    }
 }
 
-.icon-cart,
-.icon-search {
-   height: 19px;
-   width: 19px;
+
+//-------------footer---------------------//
+.footer {
+   &__logo {
+      display: block;
+      margin-bottom: 30px;
+   }
+
+   &__top {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   &__nav {
+      display: flex;
+   }
+
+   &__list {
+      margin-right: 70px;
+   }
+
+   &__list:last-child {
+      margin-right: 0;
+   }
+
+   &__item {
+      margin-bottom: 20px;
+      letter-spacing: 0.01em;
+      font-size: 18px;
+      line-height: 1.3;
+   }
+
+   &__bottom {
+      padding: 30px 0;
+      text-align: center;
+      font-size: 14px;
+      line-height: 100%;
+      background-color: #f9faff;
+   }
 }
 
-// -------------------section hero---------------------//
+.form {
+   &__button {
+      display: block;
+      position: relative;
+      padding: 13px 38px 13px 70px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.3;
+   }
 
-// .hero {
-//    display: flex;
-//    justify-content: space-between;
+   &__button::after {
+      content: "";
+      background: url("../images/sprite.svg#icon-telegram") center no-repeat;
+      position: absolute;
+      top: center;
+      left: 40px;
+      height: 16px;
+      width: 16px;
+      transition: filter 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      filter: invert(100%) sepia(0%) saturate(2011%) hue-rotate(137deg) brightness(114%) contrast(100%);
+   }
 
-//    &__history {
-//       max-width: 450px;
-//       padding-top: 156px;
-//    }
+   &__button:hover:after {
+      filter: invert(61%) sepia(31%) saturate(7500%) hue-rotate(337deg) brightness(103%) contrast(101%);
+   }
 
-//    &__title {
-//       @extend %rubik-500;
-//       font-weight: 500;
-//       font-size: 66px;
-//       line-height: 1.3;
-//       text-transform: uppercase;
-//       color: $title-color;
-//       max-width: 430px;
-//       margin-bottom: 20px;
-//    }
+   &__email {
+      padding: 13px 15px;
+      margin-bottom: 12px;
+      border: 1px solid #c2c2c2;
+      border-radius: 5px;
+      outline: transparent;
+      transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+      &:focus {
+         box-shadow: 0px 0px 0px 2px #ff6838;
+         border-radius: 5px;
+      }
 
-//    &__fragment {
-//       color: $accent;
-//    }
+      &:hover::placeholder {
+         color: $title-color;
+      }
+   }
 
-//    &__text {
-//       font-size: 20px;
-//       line-height: 150%;
-//       margin-bottom: 20px;
-//    }
+   &__email::placeholder {
+      font-size: 14px;
+      line-height: 1.3;
+      color: #c2c2c2;
+      opacity: 0.9;
+   }
+}
+.contacts {
+   &__list {
+      margin-bottom: 15px;
+   }
 
-//    &__photo {
-//       max-width: 560px;
-//    }
+   &__item {
+      font-style: 16px;
+      line-height: 2;
+   }
 
-//    &__link {
-//       text-decoration-line: underline;
-//    }
-// }
-// .batton {
-//    color: #ffffff;
-//    font-size: 18px;
-//    line-height: 1.3;
-//    padding: 12px 32px;
-//    background-color: $accent;
-//    border-radius: 6px;
-//    border: 0 transparent;
-//    margin-right: 34px;
-// }
+   &__link {
+      position: relative;
+      padding-left: 30px;
+   }
+
+   &__link--address::before {
+      @extend %content;
+      background: url("../images/sprite.svg#icon-location") center no-repeat;
+   }
+
+   &__link--tell::before {
+      @extend %content;
+      background: url("../images/sprite.svg#icon-call") center no-repeat;
+   }
+
+   &__link--mail::before {
+      @extend %content;
+      background: url("../images/sprite.svg#icon-message") center no-repeat;
+   }
+}
+.networks {
+   display: flex;
+   &__link {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 39px;
+      height: 39px;
+      background-color: #ececec;
+      border-radius: 50%;
+      margin-right: 13px;
+      border: 0 transparent;
+      outline: transparent;
+      transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+      &:focus {
+         background-color: #fff2ed;
+         box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+      }
+
+      &:hover {
+         background-color: $accent;
+      }
+
+      &:hover .networks__svg {
+         background-color: #ffffff;
+      }
+
+      &:active {
+         background-color: #fff2ed;
+         box-shadow: 0 0 0 0 #c2c2c2;
+      }
+
+      &:active .networks__svg {
+         background-color: $accent;
+      }
+   }
+
+   &__svg {
+      background-color: $default-color;
+      mask-repeat: no-repeat;
+      mask-size: contain;
+      mask-position: center;
+      width: 20px;
+      height: 20px;
+      transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+   }
+}
 
 @import "media";
