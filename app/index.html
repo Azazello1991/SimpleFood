@@ -49,7 +49,7 @@
     </header>
 
     <main class="main">
-      <!-- <div class="container">
+      <div class="container">
 
         <section class="hero">
           <div class="hero__history">
@@ -63,14 +63,366 @@
 
             <div class="hero__nav">
               <button class="button hero__button" type="button">Заказать</button>
-              <a class=" hero__link" href="#">Подробнее</a>
+              <a class="link hero__link" href="#">Подробнее</a>
             </div>
 
           </div>
-          <img class="hero__photo" src="./images/Scooter Guy.jpg" alt="фото парня на скутере">
+          <img class="hero__photo" src="./images/scooter-guy.jpg" alt="фото парня на скутере">
         </section>
 
-      </div> -->
+        <section class="category">
+
+           <h2 class="title category__title">Популярные категории</h2>
+
+           <ul class="category__nav">
+              <li class="category__item">
+                 <a href="#" class="category__link category__link--active">
+                  <span class="category__icon" style="-webkit-mask-image: url('../images/sprite.svg#icon-category-burger');"></span>
+                  Бургеры
+                 </a>
+              </li>
+
+              <li class="category__item">
+                 <a href="#" class="category__link">
+                  <span class="category__icon" style="-webkit-mask-image: url('../images/sprite.svg#icon-category-pizza');"></span>
+                  Пицца
+                 </a>
+              </li>
+
+              <li class="category__item">
+                 <a href="#" class="category__link">
+                  <span class="category__icon" style="-webkit-mask-image: url('../images/sprite.svg#icon-category-sandvich');"></span>
+                  Сендвичи
+                 </a>
+              </li>
+
+              <li class="category__item">
+                 <a href="#" class="category__link">
+                  <span class="category__icon" style="-webkit-mask-image: url('../images/sprite.svg#icon-category-asia');"></span>
+                  Азиатская кухня
+                 </a>
+              </li>
+
+              <li class="category__item">
+                 <a href="#" class="category__link">
+                  <span class="category__icon" style="-webkit-mask-image: url('../images/sprite.svg#icon-category-dish');"></span>
+                  Cеты
+                 </a>
+              </li>
+           </ul>
+
+           <ul class="gallery">
+              <li class="card gallery__item">
+                 <a class="card__link" href="#">
+                    <div class="card__photo">
+                       <img class="card__img" src="./images/gallery/burger.jpg" alt="фото продукту">
+                    </div>
+                    <p class="card__text">Чизбургер с листьями салата</p>
+                    <span class="price">160 грн.</span>
+                    <button class="button card__button" type="button">В корзину</button>
+                 </a>
+              </li>
+
+              <li class="card gallery__item">
+                 <a class="card__link" href="#">
+                    <div class="card__photo">
+                       <img class="card__img" src="./images/gallery/beef-burger.jpg" alt="фото продукту">
+                    </div>
+                    <p class="card__text">Бифбургер</p>
+                    <span class="price">190 грн.</span>
+                    <button class="button card__button" type="button">В корзину</button>
+                 </a>
+              </li>
+  
+              <li class="card gallery__item">
+                 <a class="card__link" href="#">
+                    <div class="card__photo">
+                       <img class="card__img" src="./images/gallery/burger-king.jpg" alt="фото продукту">
+                    </div>
+                    <p class="card__text">Королевский чизбургер</p>
+                    <span class="price">260 грн.</span>
+                    <button class="button card__button" type="button">В корзину</button>
+                 </a>
+              </li>
+  
+              <li class="card gallery__item">
+                 <a class="card__link" href="#">
+                    <div class="card__photo">
+                       <img class="card__img" src="./images/gallery/black-burger.jpg" alt="фото продукту">
+                    </div>
+                    <p class="card__text">Черный гамбургер</p>
+                    <span class="price">199 грн.</span>
+                    <button class="button card__button" type="button">В корзину</button>
+                 </a>
+              </li>
+  
+              <li class="card gallery__item">
+                 <a class="card__link" href="#">
+                    <div class="card__photo">
+                       <img class="card__img" src="./images/gallery/chicken-burger.jpg" alt="фото продукту">
+                    </div>
+                    <p class="card__text">Чикен бургер</p>
+                    <span class="price">180 грн.</span>
+                    <button class="button card__button" type="button">В корзину</button>
+                 </a>
+              </li>
+  
+              <li class="card gallery__item">
+                 <a class="card__link" href="#">
+                    <div class="card__photo">
+                       <img class="card__img" src="./images/gallery/burger.jpg" alt="фото продукту">
+                    </div>
+                    <p class="card__text">Чизбургер с листьями салата</p>
+                    <span class="price">160 грн.</span>
+                    <button class="button card__button" type="button">В корзину</button>
+                 </a>
+              </li>
+  
+              <li class="card gallery__item">
+                 <a class="card__link" href="#">
+                    <div class="card__photo">
+                       <img class="card__img" src="./images/gallery/beef-burger.jpg" alt="фото продукту">
+                    </div>
+                    <p class="card__text">Бифбургер</p>
+                    <span class="price">190 грн.</span>
+                    <button class="button card__button" type="button">В корзину</button>
+                 </a>
+              </li>
+  
+              <li class="card gallery__item">
+                 <a class="card__link" href="#">
+                    <div class="card__photo">
+                       <img class="card__img" src="./images/gallery/burger-king.jpg" alt="фото продукту">
+                    </div>
+                    <p class="card__text">Королевский чизбургер</p>
+                    <span class="price">260 грн.</span>
+                    <button class="button card__button" type="button">В корзину</button>
+                 </a>
+              </li>
+  
+              <li class="card gallery__item">
+                 <a class="card__link" href="#">
+                    <div class="card__photo">
+                       <img class="card__img" src="./images/gallery/black-burger.jpg" alt="фото продукту">
+                    </div>
+                    <p class="card__text">Черный гамбургер</p>
+                    <span class="price">199 грн.</span>
+                    <button class="button card__button" type="button">В корзину</button>
+                 </a>
+              </li>
+  
+              <li class="card gallery__item">
+                 <a class="card__link" href="#">
+                    <div class="card__photo">
+                       <img class="card__img" src="./images/gallery/chicken-burger.jpg" alt="фото продукту">
+                    </div>
+                    <p class="card__text">Чикен бургер</p>
+                    <span class="price">180 грн.</span>
+                    <button class="button card__button" type="button">В корзину</button>
+                 </a>
+              </li>
+  
+           </ul>
+
+           <a href="#" class="link gallery__link">Показать еще</a>
+
+        </section> 
+        
+        <section class="about">
+         <div class="about__picture">
+            <img class="about__img" src="./images/food-delivery 4.jpg" alt="картинка доставщика еды">
+         </div>
+         <div class="about__content">
+
+            <h2 class="title about__title">Оставайтесь дома,
+               <span class="about__span"> а мы позаботимся о еде</span>
+            </h2>
+
+            <p class="about__text">
+               У нас есть вкусная еда и мы готовы доставить её к вам домой! Воспользуйтесь нашей доставкой прямо сейчас и получите скиидку!
+            </p>
+
+            <ul class="about__list">
+               <li class="about__skill about__skill--fast">
+                  <span class="about__comment">Быстрая доставка за 15 минут</span> 
+               </li>
+               <li class="about__skill about__skill--delivery">
+                  <span class="about__comment">Вежливые курьеры</span> 
+               </li>
+               <li class="about__skill about__skill--restorant">
+                  <span class="about__comment">Более 500 заведений</span> 
+               </li>
+            </ul>
+
+            <button class="button about__button" type="button">Подробнее</button>
+         </div>
+        </section>
+
+        <section class="restorants">
+
+         <h2 class="title restorants__title">Лучшие рестораны</h2>
+
+         <ul class="restorants__list">
+            <li class="restorants__restorant">
+               <div class="restorants__photo">
+                  <img src="./images/restorants/blaze-pizza.jpg" alt="фото блюда" class="restorants__img">
+               </div>
+               <span class="restorants__subtitle">
+                  Blaze Pizza
+               </span>
+               <div class="restorants__footer">
+                  <span class="restorants__time">11:00 - 22:00</span>
+                  <button class="button restorants__button" type="button">
+                     <span class="restorants__icon"></span>
+                  </button>
+               </div>
+            </li>
+
+            <li class="restorants__restorant">
+               <div class="restorants__photo">
+                  <img src="./images/restorants/pizza-runcho.jpg" alt="фото блюда" class="restorants__img">
+               </div>
+               <span class="restorants__subtitle">
+                  Pizza Runcho
+               </span>
+               <div class="restorants__footer">
+                  <span class="restorants__time">12:00 - 21:00</span>
+                  <button class="button restorants__button" type="button">
+                     <span class="restorants__icon"></span>
+                  </button>
+               </div>
+            </li>
+
+            <li class="restorants__restorant">
+               <div class="restorants__photo">
+                  <img src="./images/restorants/pizza-hut.jpg" alt="фото блюда" class="restorants__img">
+               </div>
+               <span class="restorants__subtitle">
+                  Pizza Hut
+               </span>
+               <div class="restorants__footer">
+                  <span class="restorants__time">11:00 - 22:00</span>
+                  <button class="button restorants__button" type="button">
+                     <span class="restorants__icon"></span>
+                  </button>
+               </div>
+            </li>
+
+            <li class="restorants__restorant">
+               <div class="restorants__photo">
+                  <img src="./images/restorants/mc-donalds.jpg" alt="фото блюда" class="restorants__img">
+               </div>
+               <span class="restorants__subtitle">
+                  McDonald`s
+               </span>
+               <div class="restorants__footer">
+                  <span class="restorants__time">06:00 - 23:00</span>
+                  <button class="button restorants__button" type="button">
+                     <span class="restorants__icon"></span>
+                  </button>
+               </div>
+            </li>
+
+            <li class="restorants__restorant">
+               <div class="restorants__photo">
+                  <img src="./images/restorants/kfc.jpg" alt="фото блюда" class="restorants__img">
+               </div>
+               <span class="restorants__subtitle">
+                  KFC
+               </span>
+               <div class="restorants__footer">
+                  <span class="restorants__time">06:00 - 23:30</span>
+                  <button class="button restorants__button" type="button">
+                     <span class="restorants__icon"></span>
+                  </button>
+               </div>
+            </li>
+
+            <li class="restorants__restorant">
+               <div class="restorants__photo">
+                  <img src="./images/restorants/star-burgers.jpg" alt="фото блюда" class="restorants__img">
+               </div>
+               <span class="restorants__subtitle">
+                  Star Burgers
+               </span>
+               <div class="restorants__footer">
+                  <span class="restorants__time">09:00 - 21:00</span>
+                  <button class="button restorants__button" type="button">
+                     <span class="restorants__icon"></span>
+                  </button>
+               </div>
+            </li>
+         </ul>
+
+        </section>
+
+        <section class="comments">
+
+         <h2 class="title comments__title">Отзывы клиентов</h2>
+
+         <ul class="comments__slider">
+
+            <li class="comments__item">
+               <div class="comments__inner">
+                  <div class="comments__photo">
+                     <img src="./images/photo.jpg" alt="фото коментатора" class="comments__img">
+                  </div>
+                  <div class="comments__comment">
+                     <blockquote class="comments__text">
+                        SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе. Очень удобный сайт и приложение. Их доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку - однозначно рекомендую!
+                     </blockquote>
+                     <h3 class="comments__autor">Дарья</h3>
+                     <span class="comments__subtitle">Ценитель вкусной еды</span>
+                  </div>
+               </div>
+            </li>
+
+            <li class="comments__item">
+               <div class="comments__inner">
+                  <div class="comments__photo">
+                     <img src="./images/photo.jpg" alt="фото коментатора" class="comments__img">
+                  </div>
+                  <div class="comments__comment">
+                     <blockquote class="comments__text">
+                        SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе. Очень удобный сайт и приложение. Их доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку - однозначно рекомендую!
+                     </blockquote>
+                     <h3 class="comments__autor">Дарья</h3>
+                     <span class="comments__subtitle">Ценитель вкусной еды</span>
+                  </div>
+               </div>
+            </li>
+
+            <li class="comments__item">
+               <div class="comments__inner">
+                  <div class="comments__photo">
+                     <img src="./images/photo.jpg" alt="фото коментатора" class="comments__img">
+                  </div>
+                  <div class="comments__comment">
+                     <blockquote class="comments__text">
+                        SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе. Очень удобный сайт и приложение. Их доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку - однозначно рекомендую!
+                     </blockquote>
+                     <h3 class="comments__autor">Дарья</h3>
+                     <span class="comments__subtitle">Ценитель вкусной еды</span>
+                  </div>
+               </div>
+            </li>
+
+            <li class="comments__item">
+               <div class="comments__inner">
+                  <div class="comments__photo">
+                     <img src="./images/photo.jpg" alt="фото коментатора" class="comments__img">
+                  </div>
+                  <div class="comments__comment">
+                     <blockquote class="comments__text">
+                        SimpleFood - одна из лучших служб доставки продуктов из ресторанов в городе. Очень удобный сайт и приложение. Их доставщики очень вежливы и пунктуальны. Компания часто проводит акции и дарит скидки на доставку - однозначно рекомендую!
+                     </blockquote>
+                     <h3 class="comments__autor">Дарья</h3>
+                     <span class="comments__subtitle">Ценитель вкусной еды</span>
+                  </div>
+               </div>
+            </li>
+         </ul>
+        </section>
     </main>
 
     <footer class="footer">
@@ -95,46 +447,46 @@
 
                <ul class="footer__list">
                   <li class="footer__item">
-                     <a href="http://">Как это работает</a>
+                     <a href="#">Как это работает</a>
                   </li>
                   <li class="footer__item">
-                     <a href="http://">Продукты</a>
+                     <a href="#">Продукты</a>
                   </li>
                   <li class="footer__item">
-                     <a href="http://">Блюда</a>
+                     <a href="#">Блюда</a>
                   </li>
                   <li class="footer__item">
-                     <a href="http://">Меню</a>
-                  </li>
-               </ul>
-
-               <ul class="footer__list">
-                  <li class="footer__item">
-                     <a href="http://">О нас</a>
-                  </li>
-                  <li class="footer__item">
-                     <a href="http://">Новости</a>
-                  </li>
-                  <li class="footer__item">
-                     <a href="http://">Партнеры</a>
-                  </li>
-                  <li class="footer__item">
-                     <a href="http://">ЧаВо</a>
+                     <a href="#">Меню</a>
                   </li>
                </ul>
 
                <ul class="footer__list">
                   <li class="footer__item">
-                     <a href="http://">Скачать приложение</a>
+                     <a href="#">О нас</a>
                   </li>
                   <li class="footer__item">
-                     <a href="http://">Блог</a>
+                     <a href="#">Новости</a>
                   </li>
                   <li class="footer__item">
-                     <a href="http://">Что нового?</a>
+                     <a href="#">Партнеры</a>
                   </li>
                   <li class="footer__item">
-                     <a href="http://">Карта сайта</a>
+                     <a href="#">ЧаВо</a>
+                  </li>
+               </ul>
+
+               <ul class="footer__list">
+                  <li class="footer__item">
+                     <a href="#">Скачать приложение</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="#">Блог</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="#">Что нового?</a>
+                  </li>
+                  <li class="footer__item">
+                     <a href="#">Карта сайта</a>
                   </li>
                </ul>
 
