@@ -1,0 +1,204 @@
+.footer {
+  &__logo {
+    display: block;
+    margin-bottom: 30px;
+  }
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 71px;
+  }
+
+  &__nav {
+  }
+
+  &__list {
+    max-width: 601px;
+    column-count: 3;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+    letter-spacing: 0.01em;
+    font-size: 18px;
+    line-height: 1.3;
+    letter-spacing: 0.01em;
+  }
+
+  &__link {
+    text-decoration: none;
+  }
+}
+
+.form {
+  max-width: 200px;
+
+  &__button {
+    display: block;
+    position: relative;
+    padding: 13px 40px 13px 72px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.3;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &::after {
+      content: "";
+      background: url("../images/sprite.svg#icon-telegram") center no-repeat;
+      filter: invert(100%) sepia(0%) saturate(25%) hue-rotate(339deg)
+        brightness(104%) contrast(108%);
+      position: absolute;
+      left: 40px;
+      height: 16px;
+      width: 16px;
+    }
+
+    &:focus::after {
+      filter: invert(47%) sepia(80%) saturate(1633%) hue-rotate(337deg)
+        brightness(103%) contrast(102%);
+    }
+
+    &:hover::after {
+      filter: invert(47%) sepia(80%) saturate(1633%) hue-rotate(337deg)
+        brightness(103%) contrast(102%);
+    }
+  }
+
+  &__email {
+    max-width: 100%;
+    height: 44px;
+    padding: 13px 15px;
+    margin-bottom: 12px;
+    border: 1px solid #c2c2c2;
+    border-radius: 5px;
+    outline: transparent;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &:focus {
+      border: 0px solid transparent;
+      box-shadow: 0px 0px 0px 2px #ff6838;
+      border-radius: 5px;
+    }
+
+    &:hover::placeholder {
+      color: $title-color;
+    }
+  }
+
+  &__email::placeholder {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.3;
+    color: #c2c2c2;
+    opacity: 0.9;
+  }
+}
+.contacts {
+  &__list {
+    margin-bottom: 15px;
+  }
+
+  &__item {
+    font-style: 16px;
+    line-height: 2;
+    margin-bottom: 15px;
+  }
+
+  &__item:last-child {
+    margin-bottom: 0;
+  }
+
+  &__link {
+    position: relative;
+    padding-left: 30px;
+  }
+
+  &__link--address::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprite.svg#icon-location") center no-repeat;
+  }
+
+  &__link--tell::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprite.svg#icon-call") center no-repeat;
+  }
+
+  &__link--mail::before {
+    content: " ";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background: url("../images/sprite.svg#icon-message") center no-repeat;
+  }
+}
+
+.networks {
+  display: flex;
+
+  &__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 39px;
+    height: 39px;
+    background-color: #ececec;
+    border-radius: 50%;
+    margin-right: 13px;
+    border: 0 transparent;
+    outline: transparent;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+
+    &:focus {
+      background-color: #fff2ed;
+      box-shadow: 0px 0px 0px 2px rgba(255, 104, 56, 0.7);
+    }
+
+    &:hover {
+      background-color: $accent;
+    }
+
+    &:hover .networks__svg {
+      background-color: #ffffff;
+    }
+
+    &:active {
+      background-color: #fff2ed;
+      box-shadow: 0 0 0 0 #c2c2c2;
+    }
+
+    &:active .networks__svg {
+      background-color: $accent;
+    }
+  }
+
+  &__svg {
+    background-color: $default-color;
+    mask-repeat: no-repeat;
+    mask-size: contain;
+    mask-position: center;
+    width: 20px;
+    height: 20px;
+    transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+  }
+}
+
+.footer__bottom {
+  padding: 30px 0;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1;
+  background-color: #f9faff;
+}

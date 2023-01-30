@@ -1,0 +1,45 @@
+.hero {
+  display: flex;
+  align-items: center;
+  margin-bottom: 120px;
+  width: 100%;
+  height: 660px;
+  background-position: right 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+
+  .visually-hidden {
+    visibility: hidden;
+    font-size: 0;
+    width: 0;
+    height: 0;
+  }
+
+  &__history {
+    max-width: 450px;
+  }
+
+  &__subtitle {
+    font-family: "Rubik";
+    font-weight: 500;
+    font-size: 66px;
+    line-height: 1.3;
+    text-transform: uppercase;
+    color: $title-color;
+    max-width: 430px;
+    margin-bottom: 20px;
+  }
+
+  &__fragment {
+    color: $accent;
+  }
+
+  &__text {
+    line-height: 150%;
+    margin-bottom: 20px;
+  }
+
+  &__button {
+    margin-right: 30px;
+  }
+}
