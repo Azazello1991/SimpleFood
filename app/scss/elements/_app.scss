@@ -1,0 +1,45 @@
+.app {
+  background: url("/images/app.jpg") right/ contain no-repeat;
+  height: 380px;
+  margin-bottom: 118px;
+  display: flex;
+  align-items: center;
+  
+
+  &__content {
+   max-width: 570px;
+   width: 100%;
+  }
+
+  &__title {
+   text-align: left;
+   margin-bottom: 45px;
+  }
+
+  &__text {
+   padding-right: 62px;
+   margin-bottom: 30px;
+  }
+
+  &__footer {
+   display: flex;
+  }
+
+  &__networks {
+   margin-right: 15px;
+   &:last-child {
+      margin-right: 0;
+   }
+  }
+
+  &__link {
+   display: block;
+   background-size: contain;
+   background-position: 0 0;
+   background-repeat: no-repeat;
+   width: 132px;
+   height: 40px;
+  }
+}
+.title {
+}

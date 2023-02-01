@@ -1,31 +1,36 @@
+// html {
+//    scroll-behavior: smooth;
+//    scroll-padding-top: 160px;
+// }
+
 html,
 body {
-   height: 100%;
+  min-height: 100%;
+  position: relative;
+  z-index: 98;
 }
 
 body {
-   font-size: 20px;
-   line-height: 1.5;
-   font-weight: 400;
-   color: $default-color;
-   font-family: 'Rubik';
-   font-weight: 400;
-   display: flex;
-   flex-direction: column;
-   background: #f9faff;
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 400;
+  color: $default-color;
+  font-family: "Rubik";
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  background: #f9faff;
 }
 
 .main {
-   flex-grow: 1;
+  flex-grow: 1;
 }
 
 .container {
-   max-width: 1200px;
-   padding: 0 15px;
-   margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
 }
-
-
 
 .sr-only {
   position: absolute;
@@ -96,4 +101,11 @@ body {
     border-radius: 5px;
     color: $accent;
   }
+}
+
+.header--sticky .wrapper {
+  background-color: #f9faff;
+  padding: 20px 0;
+  border-bottom: 1px solid rgba(194, 194, 194, 0.2);
+  transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
 }

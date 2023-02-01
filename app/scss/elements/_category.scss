@@ -52,14 +52,14 @@
 
   &__icon {
     background-color: #363853;
-    mask-size: contain;
-    mask-position: center;
+    mask-size: 44px;
+    mask-position: 32px center;
     mask-repeat: no-repeat;
-    width: 44px;
     height: 100%;
+    width: 100%;
     position: absolute;
     top: 0;
-    left: 32px;
+    left: 0;
   }
 
   .mixitup-control-active {
@@ -111,10 +111,18 @@
     justify-items: center;
     height: 100%;
     padding: 20px 15px;
+    border-radius: 5px;
+    outline: transparent;
+
+    &:focus {
+
+      box-shadow: 0px 0px 0px 1px #ff6838;
+    }
+
     &:hover {
       box-shadow: 0px 0px 0px 1px #ff6838;
-      border-radius: 5px;
     }
+
   }
 
   &__photo {

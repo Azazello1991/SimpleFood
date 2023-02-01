@@ -11,4 +11,30 @@ $(function () {
    });
 
    var mixer = mixitup('.gallery');
+
+   //header sticky
+   $(window).scroll(function() {
+      if ($(window).scrollTop() >= 100) {
+         $('.header').addClass('header--sticky')
+      } else {
+         $('.header').removeClass('header--sticky')
+      }
+   })
+
+   const headerHeight = $('.header').outerHeight();
+
+   $('.menu__link').on('click', function (event) {
+      event.preventDefault();
+
+      const scrollAnchor = $(this).attr('href');
+
+      let scrollPoint = $(scrollAnchor).offset().top - headerHeight;
+
+
+      $('html, body').animate({
+         scrollTop: scrollPoint
+      }, 500);
+
+       return false;
+   })
 })
